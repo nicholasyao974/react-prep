@@ -18,11 +18,7 @@ It is almost certain that you will **not** be able to complete each section in t
 
 ## Contents
 
-<!---
-  TODO: add suggested time to completion
--->
-
-- [ ] 1. [Inital Set Up](/1-SetUp/README.md)
+- [ ] 1. [Inital Set Up](/1-SetUp/README.md) (3hrs 30min)
 - [ ] 2. [Basics](/2-Basics/README.md) (4hrs 30min)
 - [ ] 3. [Java Script Kata's](/3-JSKata/README.md)
 - [ ] 4. [Basic React](/4-React/README.md)

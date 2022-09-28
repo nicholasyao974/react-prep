@@ -1,6 +1,6 @@
-# First things first
+# First things first (3hrs 30min)
 
-## Get the tools
+## Get the tools (30min)
 
 1. [Download VS code](https://code.visualstudio.com/)
 2. Get some extensions for VS code (optional)
@@ -19,7 +19,7 @@
 
 <br/>
 
-## Github
+## Github (3hrs)
 
 In this section you will :
 
