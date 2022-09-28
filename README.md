@@ -23,7 +23,7 @@ It is almost certain that you will **not** be able to complete each section in t
 -->
 
 - [ ] 1. [Inital Set Up](/1-SetUp/README.md)
-- [ ] 2. [Java Script Basics](/2-JSBasics/README.md)
+- [ ] 2. [Basics](/2-Basics/README.md) (4hrs 30min)
 - [ ] 3. [Java Script Kata's](/3-JSKata/README.md)
 - [ ] 4. [Basic React](/4-React/README.md)
 - [ ] 5. [Build your first react app](/5-MyFirstApp/README.md)
