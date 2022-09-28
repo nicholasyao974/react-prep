@@ -29,6 +29,8 @@ Javascript is the language we'll be using for coding, so its pretty important. C
 
 <br/>
 
+_Remember to tick of this section on the main readme and push your changes!_
+
 ## Stretch
 
 - Finish any activity you didn't get to
