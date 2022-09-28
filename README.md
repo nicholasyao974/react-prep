@@ -14,7 +14,7 @@ The contents of this is to help you to facilitate your own learning, no one will
 
 Wonder how else the code could be used? Thought of a edge case that may break the code? Want to combine some code together to see what happens? Try it all!!!
 
-It is almost certain that you will **not** be able to complete each section in the recomended time. If that happens, I would ask you to move on to the next section anyway so that you get to give everything a go! (You can always come back to it once you've completed all the sections)
+It is almost certain that you will **not** be able to complete each section in the recomended time (Apart from the set up). If that happens, I would ask you to move on to the next section anyway so that you get to give everything a go! (You can always come back to it once you've completed all the sections)
 
 ## Contents
 
