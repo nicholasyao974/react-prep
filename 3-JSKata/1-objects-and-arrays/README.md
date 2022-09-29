@@ -7,31 +7,32 @@ In this exercise we'll practise some of the fundamentals of JavaScript and start
 
 ## Installation
 
-First, in your terminal, navigate to your `workspace` directory and clone the repository from GitHub. Don't forget, you can use the `TAB` key to complete long directory names (but not GitHub URLs).
+First, if you haven't already, navigate to the directory and install the dependencies.
 
 ```
-cd workspace
-git clone https://github.com/[COHORT-YEAR]/kata-objects-and-arrays
-cd kata-objects-and-arrays
-git checkout -b "YOURNAME_YOURPARTNERSNAME"
+cd 3-JSKata
 npm install
 ```
+## Kata with tests
 
-The last command installs external dependencies used by the exercise.
+First, take a look at the files in the `tests` folder and examine how the tests are structured. You don't have to read and understand every single test before beginning! Instead, notice the rhythm that the tests exhibit:
 
+ * **Arrange:** set up some data to use in the test, especially state _what we expect to happen_
+ * **Act:** call the function that is being tested, so we can find out _what actually happens_
+ * **Assert:** check to see if what we _expected_ to happen _actually_ happened!
 
 ## The first test
 
 To run the first test from your terminal:
 
 ```
-npm test getGreeting
+npm test 1-tests/getGreeting
 ```
 
 You'll see some red output that looks like this:
 
 ```
- FAIL  tests/getGreeting.test.js
+ FAIL  1-objects-and-arrays/1-tests/getGreeting.test.js
   ✕ getGreeting returns "Hello <name>" (4ms)
 
   ● getGreeting returns "Hello <name>"
@@ -51,9 +52,9 @@ Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
 Time:        0.619s, estimated 1s
-Ran all test suites matching /getGreeting/i.
+Ran all test suites matching /1-tests\/getGreeting/i
 
-Active Filters: filename /getGreeting/
+Active Filters: filename /1-tests/getGreeting/
  › Press c to clear filters.
 
 Watch Usage
@@ -69,10 +70,6 @@ The most important thing is not to panic! Welcome to your first introduction to 
 
 
 ## Kata
-
-_Kata_ is a concept from martial arts meaning a sequence of moves composed into a _form_. Martial artists practise katas to build a "muscle-memory" for the basic moves. By practicing katas the artist hopes to make the basics of their art instinctual. When danger strikes the basics will be so familiar that they can respond without thinking.
-
-![](https://49.media.tumblr.com/10c948900ec4276131e45047bb3846a4/tumblr_n3005tWnBf1s6my4qo1_500.gif)
 
 The file you'll be working in is `kata.js`. This file is full of incomplete functions with comments describing what they should do. Every time you run the tests (using `npm test nameOfTheFunctionYoureWorkingOn`) you're checking to see if you've completed each function correctly. When you finish it successfully, it will show up GREEN and you can move on to the next function.
 
@@ -96,19 +93,17 @@ function getGreeting (name) {
 You'll notice that when you save `kata.js` your terminal indicates the test is now passing.
 
 ```
- PASS  tests/getGreeting.test.js
+ PASS  1-objects-and-arrays/1-tests/getGreeting.test.js
   ✓ getGreeting returns "Hello <name>" (1ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        0.069s, estimated 1s
-Ran all test suites matching /getGreeting/i.
+Ran all test suites matching /1-tests\/getGreeting/i
 
 Watch Usage: Press w to show more.
 ```
-
-One passed! Some coding pairs choose to treat these as high-five moments ... you can decide for yourselves.
 
 Now you should press the `q` key in the terminal to stop the test runner (`w` will show you all the options) and you can move on to the next function.
 
@@ -116,22 +111,15 @@ This way we can practise the basics of JavaScript and build up our muscle memory
 
  1. read what the next function is supposed to do
  1. run the tests using `npm test nameOfTheFunctionYoureWorkingOn`
- 1. think and talk about how to solve the problem
  1. write the code and save the file
  1. read any errors and keep trying
  1. rinse and repeat until all the tests pass
-
-In later challenges we're going to become a lot more familiar with this process. A pattern very similar to this is known as Test Driven Development (TDD).
-
-> Remember to ask for help sooner rather than later if you get stuck. Don't stay blocked beyond where your learning is benefiting.
-
-
 ## Making sure you're finished
 
 To run all of the tests for all of the functions you've written, in terminal run:
 
 ```
-npm test tests
+npm test 1-tests
 ```
 
 This will run all tests in the `tests` directory.

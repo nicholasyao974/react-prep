@@ -1,39 +1,6 @@
-# Kata: Types, functions and modules
+# Kata: Types and Functions
 
-This challenge is designed to practice familiarity with types, functions, and modules.
-
-
-## Install
-
-Clone this repo, then:
-
-  ```shell
-  cd kata-types-modules
-  npm install
-  ```
-
-
-## Understanding the challenge
-
-Run the first test using `npm test getBoolean`. Feel free to have a look in `package.json` to see what the `test` script is doing.
-
-You should get an error saying something about '`getBoolean` is not a function'. This is because `types.js`, the file that the test is importing/requiring, isn't exporting a `getBoolean` function.
-
-In order for the tests to test the functions, you need to _export_ each function the tests are expecting. This is often done by exporting an object that contains the functions as properties. This is an example:
-
-```js
-// example.js
-module.exports = {
-  doWork: doWork
-}
-
-function doWork () {
-  return 'work'
-}
-```
-
-As you can see from the `tests` directory, we have tests for `types` and `functions`. The tests in these folders map to the `types.js` and `functions.js` files in the root folder. To complete this challenge, you will first write functions and export them from `types.js` to pass the tests in the `tests/types` folder. Then you will write and export functions in `functions.js` to pass the tests from `tests/functions`.
-
+This challenge is designed to practice familiarity with types and functions.
 
 ## Common functions for arrays
 

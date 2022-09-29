@@ -2,16 +2,8 @@
 
 This kata is similar to the others. Some tests have been written in the `tests` folder and the challenge is to get them to pass. The stubs of the functions they test are defined in `utilities.js`, but they are empty. You'll work through all the functions until all of the tests pass.
 
-## Setup
-
-In your terminal:
-
-* Clone this repo and `cd` into the new folder.
-* Run `npm install` to install the dependent npm modules defined in `package.json`.
-
 ## The first test
 
-* Run `code .` and open `utilities.js`.
 * Run `npm test getType`. This will run the first test, the `getType` function in `utilities.js`.
 
   You should see it is currently failing. Jest, the test framework we're using, is watching the relevant files so it will let us know as soon as we have the test passing.
@@ -21,14 +13,6 @@ In your terminal:
   ```js
   function getType (thing) {
     return typeof thing
-  }
-  ```
-
-* Export the function so `tests/getType.test.js` can access the function. Put this at the top of `utilities.js`:
-
-  ```js
-  module.exports = {
-    getType: getType
   }
   ```
 
@@ -42,7 +26,7 @@ In your terminal:
 To run all of the tests for all of the functions you've written, in terminal run:
 
 ```
-npm test tests
+npm test 2-tests
 ```
 
 This will run all tests in the `tests` directory.

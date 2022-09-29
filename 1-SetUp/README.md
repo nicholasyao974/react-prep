@@ -17,6 +17,8 @@
      > - GitLens - Git supercharged
      > - A [theme](https://code.visualstudio.com/docs/getstarted/themes) of your choice (I like the default dark+)
 
+     <!-- Need to add instructions to install ZSH, wont be able to run nodeJs projects otherwise -->
+
 <br/>
 
 ## Github (3hrs)

@@ -1,10 +1,88 @@
 # Mastering the Basics
 
-Kata's
+This section will help you do two things:
+1. Re emphasis the javascript that you've been learning through "kata's"
+2. Get used to writting code in vscode
 
-<!-- TODO: Fork from these repos into this one -->
+<br/>
 
-- [ ] [Object and Arrays](https://github.com/Pohutukawa-2021/kata-objects-and-arrays)
-- [ ] [Strings/ numbers/ functions](https://github.com/Pohutukawa-2021/kata-strings-numbers-modules)
-- [ ] [Types](https://github.com/Pohutukawa-2021/kata-types-modules)
-- [ ] [Data structures](https://github.com/Pohutukawa-2021/kata-data-structures)
+## 1. Kata
+
+_Kata_ is a concept from martial arts meaning a sequence of moves composed into a _form_. Martial artists practise katas to build a "muscle-memory" for the basic moves. By practicing katas the artist hopes to make the basics of their art instinctual. When danger strikes the basics will be so familiar that they can respond without thinking.
+
+![kata](https://49.media.tumblr.com/10c948900ec4276131e45047bb3846a4/tumblr_n3005tWnBf1s6my4qo1_500.gif)
+
+Exercises in this section are empty functions (that you have to complete). There are pre written tests that go with each function. The tests are there for you to run to check if your solution is correct. You can also look at the tests before hand to get a feel for what you have to do.
+
+<br/>
+
+## 2. VS code
+
+The following exercises are ran as a [nodeJs](https://nodejs.org/en/) project. The only thing you really need to know about it right now is that its what lets us run our javascript code in vscode.
+
+<br/>
+
+<details>
+<summary>Navigating the folder structure</summary>
+
+Have a look at your terminal and notice the title `react-prep`, this is your current working folder. 
+
+![react-prep](https://drive.google.com/uc?id=1ZEz2pNV66b4UfQb8lvLzmJTGrCn-UXCs)
+
+We need to navigate to `3-JSKata` folder to be able to run the exercises. You can do this by pasting in the following command into your terminal:
+```
+cd 3-JSKata
+```
+
+![3-JSKata](https://drive.google.com/uc?id=1JmC27cwtVBh5qsg93qWZW7yKrAKu_d5O)
+*Note: try pressing `tab` after typing a few letters*
+
+> You can navigate your entire computer using the terminal! Checkout out some more termnial commands [here](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/) if you're interested.
+
+<br/>
+</details> 
+
+<details>
+<summary>Files and folders</summary>
+Ok now that we're here we can almost start to work on the exercises. Apart from the exercise folders (1-objects-and-arrays, etc...) there's a few more that I want to briefly introduce to you.
+
+<br/>
+<h4><i>package.json</i></h4>
+Contains information about the project, and also contains the list of dependices used for the project. A dependency is simply a piece of code that some one else has written that you are using in the project (can also be called a "library")
+
+<br/>
+<h4><i>package-lock.json</i></h4>
+Contains version history about the dependencies. A lot of libraries are ongoing projects, and over time these libraries will recieve updates. These updates, while great, can introduce breaking changes to our code base. This file helps us to control what version we are using.
+
+<br/>
+<h4><i>node_modules</i></h4>
+In your termial run "npm install". After a short while you should now see this folder, it contains the actual code of the libraries you are using (plus all the background code you didn't know you were using).
+
+<br/>
+<h4><i>.gitignore</i></h4>
+Have a look inside the node_modules folder. Notice that this folder is HUGE (it only gets bigger as your project gets bigger)! We don't want to store all that code in our GitHub repository, and thats where this file comes in. When we push our commits, this file tells git which files NOT to send to the remote.
+
+
+<br/>
+</details>
+
+<br/>
+
+
+## Exercises
+- [ ] [Object and arrays](./1-objects-and-arrays/README.md)
+- [ ] [Strings and numbers](./2-strings-and-numbers/README.md)
+- [ ] [Data structures](./3-data-structures/README.md)
+- [ ] [Types](./4-types/README.md)
+
+<br />
+
+## Stretch
+
+- Finish any activity you haven't
+- More to come...
+<!-- Add a hard JS activity? -->
+
+<br />
+
+_These exercies are adapted from resoruces used by [Enspiral Dev Academy](https://devacademy.co.nz/?gclid=CjwKCAjw4c-ZBhAEEiwAZ105Re-c0454ENn1Hm-4VD-Z0JQEVPt1Ul30ODpbw2m26cHs-oi7_KEtihoCZNEQAvD_BwE) under the [ISC](https://opensource.org/licenses/ISC) license._
