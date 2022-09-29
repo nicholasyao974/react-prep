@@ -1,2 +1,3 @@
-function find (arr, searchDetails) {
-}
+function find(arr, searchDetails) {}
+
+module.exports = find

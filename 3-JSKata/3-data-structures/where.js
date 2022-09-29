@@ -1,2 +1,3 @@
-function where (arr, searchDetails) {
-}
+function where(arr, searchDetails) {}
+
+module.exports = where

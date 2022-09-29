@@ -1,5 +1,8 @@
-function getFirst (arr) {
-}
+function getFirst(arr) {}
 
-function getLast (arr) {
+function getLast(arr) {}
+
+module.exports = {
+    getFirst,
+    getLast
 }

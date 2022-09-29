@@ -1,2 +1,3 @@
-function getPropTypes (obj) {
-}
+function getPropTypes(obj) {}
+
+module.exports = getPropTypes

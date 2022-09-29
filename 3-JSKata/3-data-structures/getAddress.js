@@ -1,2 +1,3 @@
-function getAddress (obj) {
-}
+function getAddress(obj) {}
+
+module.exports = getAddress
