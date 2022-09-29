@@ -1,4 +1,4 @@
-# Mastering the Basics
+# Mastering the Basics (8hrs)
 
 This section will help you do two things:
 1. Re emphasis the javascript that you've been learning through "kata's"
@@ -70,10 +70,10 @@ Have a look inside the node_modules folder. Notice that this folder is HUGE (it 
 
 
 ## Exercises
-- [ ] [Object and arrays](./1-objects-and-arrays/README.md)
-- [ ] [Strings and numbers](./2-strings-and-numbers/README.md)
-- [ ] [Data structures](./3-data-structures/README.md)
-- [ ] [Types](./4-types/README.md)
+- [ ] [Object and arrays](./1-objects-and-arrays/README.md) (2hrs)
+- [ ] [Strings and numbers](./2-strings-and-numbers/README.md) (2hrs)
+- [ ] [Data structures](./3-data-structures/README.md) (2hrs)
+- [ ] [Types](./4-types/README.md) (2hrs)
 
 <br />
 
