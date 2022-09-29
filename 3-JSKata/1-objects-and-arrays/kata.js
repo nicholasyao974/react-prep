@@ -56,9 +56,7 @@ function makeArrayOfItem(item, length) {}
 
 // makeArrayOfItems should return an array containing all arguments passed to it
 // Tip: consider JavaScript's Rest parameters
-function makeArrayOfItems() {
-
-}
+function makeArrayOfItems() {}
 
 // hasItem should return true if `item` is present in `arr` at least once,
 // otherwise it should return false.
@@ -72,9 +70,7 @@ function getItemAtIndex(arr, idx) {}
 // replaceItemAtIndex should return a copy of `arr` with
 // the element at `idx` replaced with `item`
 // Tip: consider the array literal spread syntax
-function replaceItemAtIndex(arr, idx, item) {
-
-}
+function replaceItemAtIndex(arr, idx, item) {}
 
 // insertItemAtIndex should return a copy of `arr` with `item` inserted at
 // `idx` without overwriting any array values (the array should get longer)
@@ -106,30 +102,28 @@ function findOneByProperty(arr, search) {}
 
 // findAll should return an array containing all objects in `arr` that
 // have the property and value of `search`
-function findAll(arr, search) {
-
-}
+function findAll(arr, search) {}
 
 module.exports = {
-    addName,
-    ageOneYear,
-    deleteItem,
-    deleteItemAtIndex,
-    deleteProperty,
-    getGreeting,
-    getItemAtIndex,
-    getKeys,
-    getPropertyValue,
-    getValues,
-    findOneByProperty,
-    findAll,
-    hasItem,
-    insertItemAtIndex,
-    makeArrayOfItem,
-    makeArrayOfItems,
-    makeObject,
-    replaceItemAtIndex,
-    returnErrorIfFalsy,
-    unzipObject,
-    zipObject
-}
+  addName,
+  ageOneYear,
+  deleteItem,
+  deleteItemAtIndex,
+  deleteProperty,
+  getGreeting,
+  getItemAtIndex,
+  getKeys,
+  getPropertyValue,
+  getValues,
+  findOneByProperty,
+  findAll,
+  hasItem,
+  insertItemAtIndex,
+  makeArrayOfItem,
+  makeArrayOfItems,
+  makeObject,
+  replaceItemAtIndex,
+  returnErrorIfFalsy,
+  unzipObject,
+  zipObject,
+};
