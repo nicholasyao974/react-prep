@@ -209,3 +209,7 @@ Create your array of dog objects and call it `DogsArray`, and pass it into your 
 
 - Look into [Material UI](https://mui.com/material-ui/getting-started/overview/)
 - Look into react [hooks](https://reactjs.org/docs/hooks-state.html)
+
+<br/>
+
+_These exercies are adapted from resoruces used by [Enspiral Dev Academy](https://devacademy.co.nz/?gclid=CjwKCAjw4c-ZBhAEEiwAZ105Re-c0454ENn1Hm-4VD-Z0JQEVPt1Ul30ODpbw2m26cHs-oi7_KEtihoCZNEQAvD_BwE) under the [ISC](https://opensource.org/licenses/ISC) license._
