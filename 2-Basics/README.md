@@ -12,7 +12,7 @@ HTML is the bones of web development. No matter how fancy a website is, this is 
 
 ## Flexbox (30min)
 
-As you were building out the cat app, you may have notcied the lack of styling. There are many ways to add styling to a web page, however the most relevant to us is flex box. It'll make a lot more sense when you start getting into react (later), but for now, have a go at this game.
+As you were building out the cat app, you may have notcied the lack of styling. There are many ways to add styling to a web page, however the most relevant to us is flex box. Knowing this will become more and more important as you get into styling your web pages more, but for now, have a go at this game and tuck the info at the back of your mind.
 
 > [Flex Box Froggy](https://flexboxfroggy.com/)
 
