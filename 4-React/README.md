@@ -1,70 +1,211 @@
-# Getting Started with Create React App
+# Intro to React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+componest always have a capital letter
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+# Paws for Effect
 
-### `npm start`
+This exercise walks you through the basics of React development. By the end of it, you should have been exposed to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.  Creating simple components
+2.  Using components inside other components
+3.  Passing props to components
+4.  Using JavaScript expressions inside JSX.
+5.  Using `Array.map` to display a series of components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+## 1. Install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After navigating to this folder in your terminal:
 
-### `npm run build`
+```shell
+npm i
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Spinning paw](/4-React/public/screenshots/paw.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 2. The Project Structure
 
-### `npm run eject`
+Take a look at `src/index.js`, this is the main "entry point" of our app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+From there have a look at `src/App.jsx`. This is the main file thats going to contain all our components. Kinda boring right, but I promise it'll get more exciting.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+And now have a look at `src/components/Logo/Logo.jsx`, now's where we start seeing some action! You should see the code below:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```jsx
+export function Logo() {
+  return <img className="spinner" src="/images/paw.png" alt="spinner" />
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You are looking at a functional react component! Instead of showing a web page in 1 file, we can render it in small "chunks" (or components). A component can contain other components, some of which can be repeated to build lists of items on the page.
 
-## Learn More
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 3. The Dog component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3.1 Let's make a component now
 
-### Code Splitting
+In your editor, open the `src/components/Dog` directory, and make a new component called `Dog.jsx` there:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```jsx
+export function Dog(props) {
+  return (
+    <div className="dog-wrapper">
+      <div className="dog">
+        <div className="dog-name-plate">
+          <span className="dog-name">{props.name}</span>
+          <span className="dog-breed">{props.breed}</span>
+        </div>
+        <span className="dog-superpower">{props.superpower}</span>
+      </div>
+    </div>
+  )
+}
+```
 
-### Analyzing the Bundle Size
+Copy/paste will do for this one. Notice that it looks a lot like `App.jsx`, except there are a few extra tags and we're making use of _props_. The props come from what we would normally think of as 'attributes' on the component's tag in JSX:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```jsx
+<Dog name="Desdemona" breed="Bulldog" superpower="Heat vision" />
+```
 
-### Making a Progressive Web App
+Here, `name`, `breed`, and `superpower` are _props_. The `Dog` component will receive them as a JavaScript object like so:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```js
+const props = {
+  name: 'Desdemona',
+  breed: 'Bulldog',
+  superpower: 'Heat vision'
+}
+```
 
-### Advanced Configuration
+When we refer to a prop in JSX we have to put it inside curly braces, like so:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```jsx
+<span>{props.name}</span>
+```
 
-### Deployment
+One last thing before we try out our component, mkae a file called `index.js`, also in the same folder (`src/components/Dog`) and paste the following in.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```js
+export { Dog } from './Dog'
+```
 
-### `npm run build` fails to minify
+This just makes our component easier to be imported and used.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+<br/>
+
+### 3.2 Time to try it out
+
+In `App.jsx`, import your new Dog component:
+
+```js
+import { Dog } from './components/Dog'
+```
+
+and add a Dog tag (use Desdemona, above if you like). The JSX returned should look something like this:
+
+```jsx
+<div className="container">
+  <Logo />
+  <Dog name="Desdemona" breed="Bulldog" superpower="Heat vision" />
+</div>
+```
+
+You should see something like this in the browser:
+
+![A Dog component](/4-React/public/screenshots/dog.png)
+
+> Try adding more dogs, right underneath the first one. Notice what happens when you don't provide one of the values?
+
+**_Congraduations, you just created and used your first react component!_**
+
+<br />
+
+## 4. The Subtitle component
+
+Try it yourself. Define a component called `Subtitle` that takes just one prop, `text`, and wraps it in `<h2>` tags. Import it in the App component and use it like so:
+
+```jsx
+  <Logo />
+  <Subtitle text='Canines using supercanine abilities for social good.' />
+  <Dog name="Desdemona" breed="Bulldog" superpower="Heat vision" />
+```
+
+You should see something like this:
+
+![Subtitle component](/4-React/public/screenshots/subtitle.png)
+
+The `server/public/images` directory contains a few dog silhouettes. Try modifying the components to add an image for each `Dog`.
+
+<br />
+
+## 5. Moar components!
+
+### 5.1 Now by yourself add 2 more dogs to your app component.
+
+As developers we want to be efficent with our code. Adding a few more dogs may be no problem, but what if we want 10 more? What if 100 more? This is where all our javascript practise comes into use!
+
+### 5.2 DogList
+
+Create a new component called `DogList`, props for this component will will be an array of objects containing the data for a dog. Then using the [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) render each of the items in the array with the dog component.
+
+<details>
+<summary>Hint</summary>
+
+Example of array being passed in
+
+```jsx
+const array = [
+  {
+    firstName: 'John',
+    lastName: 'Doe'
+  },
+  {
+    firstName: 'Jane',
+    lastName: 'Doe'
+  }
+]
+```
+
+Using javascript in the `return` of the function
+
+```jsx
+return (
+  <>
+    {array.map((person) =>
+      <Contact firstName={person.firstName} lastName={person.lastName}>
+    )}
+  <>
+)
+```
+
+> Note
+>
+> - The empty angle brackets `<></>` is called a [fragment](https://reactjs.org/docs/fragments.html), it allows group components without adding unnecessary divs
+> - After the fragment, the curly brackets `{}` tells the editor that you are now in "javascript land"
+
+ </details>
+
+ <br />
+
+### 5.3 DogsArray
+
+Now back in `App.jsx`, import your `DogList` component.
+
+Create your array of dog objects and call it `DogsArray`, and pass it into your `DogList` component.
+
+<br />
+
+# Stretch
+
+- Look into [Material UI](https://mui.com/material-ui/getting-started/overview/)
+- Look into react [hooks](https://reactjs.org/docs/hooks-state.html)
