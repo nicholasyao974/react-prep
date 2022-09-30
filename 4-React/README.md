@@ -1,10 +1,40 @@
-# Intro to React
+# Intro to React (15min)
 
-componest always have a capital letter
+Brief overview of [React](https://www.youtube.com/watch?v=1wZoGFF_oi4)
+
+A few key practical differences:
+
+- A component should always start with a **capital letter**
+- Instead of `.js`, use `.jsx`. This lets vscode know its a react file
+- Each react component can only return 1 child, eg:
+
+  will return an error
+
+  ```jsx
+  return (
+    <Logo />
+    <Header />
+  )
+  ```
+
+  is valid
+
+  ```jsx
+  return (
+    <div>
+      <Logo />
+      <Header />
+    </div>
+  )
+  ```
+
+> If everything in the exercise is looking a little confusing have a go at a few [freeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries#react) exercises first!
+>
+> - Create a Simple JSX Element - Create a Stateless Functional Component
 
 <br />
 
-# Paws for Effect
+# Paws for Effect (4hrs)
 
 This exercise walks you through the basics of React development. By the end of it, you should have been exposed to:
 
@@ -156,7 +186,7 @@ As developers we want to be efficent with our code. Adding a few more dogs may b
 
 ### 5.2 DogList
 
-Create a new component called `DogList`, props for this component will will be an array of objects containing the data for a dog. Then using the [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) render each of the items in the array with the dog component.
+Create a new component called `DogList`, the props for this component will be an array of objects containing the data of a dog. Then using the [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) render each of the objects in the array with the `Dog` component.
 
 <details>
 <summary>Hint</summary>
