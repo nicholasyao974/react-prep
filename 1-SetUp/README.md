@@ -1,27 +1,71 @@
-# First things first (3hrs 30min)
+# First things first (3hrs)
 
-## Get the tools (30min)
+## Get the tools (1hr)
 
-1. [Download VS code](https://code.visualstudio.com/)
-2. Get some extensions for VS code (optional)
+1. Computer set up
+
+   - **Mac users** [set up](/mac-setup)
+   - **PC users** [set up](/pc-setup.md)
+
+2. [Set Zsh as your default terminal for vsCode](https://www.shanebart.com/set-default-vscode-terminal/)
+
+3. [Download VS code](https://code.visualstudio.com/)
+
+4. Get some extensions for VS code
 
    - Open extensions menu (button looks the one below)
 
      ![extensions button](https://lh4.googleusercontent.com/s3Ic3DZ_t7fXuiSG0SxAYpGZULsif0QPm_jWoTWTDvAT-PohsXBbsuzZwrGnZ3k8uWA=w2400)
 
    - I reccomend these ones, but feel free to get more!
+
      > - ESLint
      > - Prettier
-     > - vscode-icons
-     > - Jest Runner
-     > - GitLens - Git supercharged
-     > - A [theme](https://code.visualstudio.com/docs/getstarted/themes) of your choice (I like the default dark+)
+     > - (optional) vscode-icons
+     > - (optional) Jest Runner
+     > - (optional) GitLens - Git supercharged
+     > - (optional) A [theme](https://code.visualstudio.com/docs/getstarted/themes) of your choice (I like the default dark+)
 
-     <!-- Need to add instructions to install ZSH, wont be able to run nodeJs projects otherwise -->
+     <br/>
 
-<br/>
+5. Visual Studio Code settings
 
-## Github (3hrs)
+   In VS Code:
+
+   1. Click the Settings cog button in the bottom left and open the Command Palette.
+   2. Type `settings.json` into the little search box that appears at the top of your screen.
+   3. Click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
+
+   4. Paste these contents inside the curly brackets:
+
+      ```json
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs":"active",
+      "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "prettier.semi": false,
+      "prettier.singleQuote": true
+      ```
+
+   5. Save your `settings.json` file.
+
+      > Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines.
+      >
+      > See [Accessibility of code in VS Code or the terminal](code-accessibility.md) for suggestions on how you might customise your setup for readability.
+
+ <br/>
+
+## Github (2hrs)
 
 In this section you will :
 
@@ -142,5 +186,4 @@ Note: You can push changes straight to your main branch and don't have to raise 
 
 These are optional things that you can look into for more indepth knowledge of the covered topics. Something you can do if you would like to be further stretched/ or just have the time to do.
 
-- Download [ZSH](https://ohmyz.sh/) and make it your default terminal in vscode
 - [Github Skills](https://skills.github.com/)
