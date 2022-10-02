@@ -4,7 +4,7 @@ Brief overview of [React](https://www.youtube.com/watch?v=1wZoGFF_oi4)
 
 A few key practical differences:
 
-- A component should always start with a **capital letter**
+- A react component should always start with a **capital letter**
 - Instead of `.js`, use `.jsx`. This lets vscode know its a react file
 - Each react component can only return 1 child, eg:
 
@@ -28,9 +28,9 @@ A few key practical differences:
   )
   ```
 
-> If everything in the exercise is looking a little confusing have a go at a few [freeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries#react) exercises first!
+> If the exercise below is looking a little confusing have a go at a few [freeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries#react) exercises first!
 >
-> - Create a Simple JSX Element - Create a Stateless Functional Component
+> - Complete: Create a Simple JSX Element - Create a Stateless Functional Component
 
 <br />
 
@@ -73,7 +73,7 @@ export function Logo() {
 }
 ```
 
-You are looking at a functional react component! Instead of showing a web page in 1 file, we can render it in small "chunks" (or components). A component can contain other components, some of which can be repeated to build lists of items on the page.
+You are looking at a functional react component! Instead of showing a web page in one file, we can render it in small "chunks" (or components). A component can contain other components, some of which can be repeated to build lists of items on the page.
 
 <br />
 
@@ -121,7 +121,7 @@ When we refer to a prop in JSX we have to put it inside curly braces, like so:
 <span>{props.name}</span>
 ```
 
-One last thing before we try out our component, mkae a file called `index.js`, also in the same folder (`src/components/Dog`) and paste the following in.
+One last thing before we try out our component, make a file called `index.js`, also in the same folder (`src/components/Dog`) and paste the following in.
 
 ```js
 export { Dog } from './Dog'
@@ -156,7 +156,7 @@ You should see something like this in the browser:
 
 > Try adding more dogs, right underneath the first one. Notice what happens when you don't provide one of the values?
 
-**_Congraduations, you just created and used your first react component!_**
+**Congratulation, you just created and used your first react component!\_**
 
 <br />
 
@@ -180,9 +180,11 @@ The `server/public/images` directory contains a few dog silhouettes. Try modifyi
 
 ## 5. Moar components!
 
-### 5.1 Now by yourself add 2 more dogs to your app component.
+### 5.1 More Dogs
 
-As developers we want to be efficent with our code. Adding a few more dogs may be no problem, but what if we want 10 more? What if 100 more? This is where all our javascript practise comes into use!
+Now by yourself add 2 more dogs to your app component.
+
+> As developers we want to be efficent with our code. Adding a few more dogs may be no problem, but what if we want 10 more? What if 100 more? This is where all our javascript practise comes into use!
 
 ### 5.2 DogList
 
@@ -220,7 +222,7 @@ return (
 
 > Note
 >
-> - The empty angle brackets `<></>` is called a [fragment](https://reactjs.org/docs/fragments.html), it allows group components without adding unnecessary divs
+> - The empty angle brackets `<></>` is called a [fragment](https://reactjs.org/docs/fragments.html), it groups components without adding unnecessary divs
 > - After the fragment, the curly brackets `{}` tells the editor that you are now in "javascript land"
 
  </details>
@@ -238,7 +240,7 @@ Create your array of dog objects and call it `DogsArray`, and pass it into your 
 # Stretch
 
 - Look into [Material UI](https://mui.com/material-ui/getting-started/overview/)
-- Look into react [hooks](https://reactjs.org/docs/hooks-state.html)
+- Look into [react hooks](https://reactjs.org/docs/hooks-state.html)
 
 <br/>
 

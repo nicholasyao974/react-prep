@@ -4,12 +4,12 @@
 
 1. Computer set up
 
-   - **Mac users** [set up](/mac-setup)
+   - **Mac users** [set up](/mac-setup.md)
    - **PC users** [set up](/pc-setup.md)
 
-2. [Set Zsh as your default terminal for vsCode](https://www.shanebart.com/set-default-vscode-terminal/)
+2. [Download VS code](https://code.visualstudio.com/)
 
-3. [Download VS code](https://code.visualstudio.com/)
+3. [Set Zsh as your default terminal for vsCode](https://www.shanebart.com/set-default-vscode-terminal/)
 
 4. Get some extensions for VS code
 
