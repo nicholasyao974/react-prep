@@ -1,12 +1,12 @@
-const kata = require('../kata.js')
+const kata = require("../kata.js");
 
-test('makeArrayOfItem (SINGULAR) makes an array out of one item', () => {
-    // Arrange
-    const expected = ['dog', 'dog', 'dog']
+test("makeArrayOfItem (SINGULAR) makes an array out of one item", () => {
+  // Arrange
+  const expected = ["dog", "dog", "dog"];
 
-    // Act
-    const actual = kata.makeArrayOfItem('dog', 3)
+  // Act
+  const actual = kata.makeArrayOfItem("dog", 3);
 
-    // Assert
-    expect(actual).toEqual(expected)
-})
+  // Assert
+  expect(actual).toEqual(expected);
+});

@@ -21,15 +21,15 @@ function filterStringsWithCommas(str) {}
 function splitStringByCommas(str) {}
 
 module.exports = {
-    getType,
-    isNumber,
-    toNumber,
-    isStringNumber,
-    add,
-    addStrings,
-    addStringsOrNumbers,
-    isEmail,
-    countIf,
-    filterStringsWithCommas,
-    splitStringByCommas
-}
+  getType,
+  isNumber,
+  toNumber,
+  isStringNumber,
+  add,
+  addStrings,
+  addStringsOrNumbers,
+  isEmail,
+  countIf,
+  filterStringsWithCommas,
+  splitStringByCommas,
+};

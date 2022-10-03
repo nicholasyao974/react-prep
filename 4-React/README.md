@@ -29,7 +29,7 @@ A few key practical differences:
       <Logo />
       <Header />
     </div>
-  )
+  );
   ```
 
 > If the exercise below is looking a little confusing have a go at a few [freeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries#react) exercises first!
@@ -73,7 +73,7 @@ And now have a look at `src/components/Logo/Logo.jsx`, now's where we start seei
 
 ```jsx
 export function Logo() {
-  return <img className="spinner" src="/images/paw.png" alt="spinner" />
+  return <img className="spinner" src="/images/paw.png" alt="spinner" />;
 }
 ```
 
@@ -99,7 +99,7 @@ export function Dog(props) {
         <span className="dog-superpower">{props.superpower}</span>
       </div>
     </div>
-  )
+  );
 }
 ```
 
@@ -113,10 +113,10 @@ Here, `name`, `breed`, and `superpower` are _props_. The `Dog` component will re
 
 ```js
 const props = {
-  name: 'Desdemona',
-  breed: 'Bulldog',
-  superpower: 'Heat vision'
-}
+  name: "Desdemona",
+  breed: "Bulldog",
+  superpower: "Heat vision",
+};
 ```
 
 When we refer to a prop in JSX we have to put it inside curly braces, like so:
@@ -128,7 +128,7 @@ When we refer to a prop in JSX we have to put it inside curly braces, like so:
 One last thing before we try out our component, make a file called `index.js`, also in the same folder (`src/components/Dog`) and paste the following in.
 
 ```js
-export { Dog } from './Dog'
+export { Dog } from "./Dog";
 ```
 
 This just makes our component easier to be imported and used.
@@ -142,7 +142,7 @@ This just makes our component easier to be imported and used.
 In `App.jsx`, import your new Dog component:
 
 ```js
-import { Dog } from './components/Dog'
+import { Dog } from "./components/Dog";
 ```
 
 and add a Dog tag (use Desdemona, above if you like). The JSX returned should look something like this:
@@ -202,14 +202,14 @@ Example of array being passed in
 ```jsx
 const array = [
   {
-    firstName: 'John',
-    lastName: 'Doe'
+    firstName: "John",
+    lastName: "Doe",
   },
   {
-    firstName: 'Jane',
-    lastName: 'Doe'
-  }
-]
+    firstName: "Jane",
+    lastName: "Doe",
+  },
+];
 ```
 
 Using javascript in the `return` of the function
