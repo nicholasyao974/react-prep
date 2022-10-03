@@ -2,7 +2,7 @@
 
 ## Intro
 
-Hello and welcome! My name is Siyang I'm so excited that you're embarking on this journey of becoming a developer!
+Hello and welcome, I'm so excited that you're embarking on this journey of becoming a developer!
 
 ## Setting the Scene
 
