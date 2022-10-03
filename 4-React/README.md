@@ -6,6 +6,10 @@ A few key practical differences:
 
 - A react component should always start with a **capital letter**
 - Instead of `.js`, use `.jsx`. This lets vscode know its a react file
+- Because this is a react app, your console logs won't be logged in the termnial anymore, it will appear in your browser
+  > 1. Run your project, and open in the browser
+  > 2. Right click and click `inspect`
+  > 3. Select the `Console`
 - Each react component can only return 1 child, eg:
 
   will return an error

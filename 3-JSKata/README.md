@@ -1,6 +1,7 @@
 # Mastering the Basics (8hrs)
 
 This section will help you do two things:
+
 1. Re emphasis the javascript that you've been learning through "kata's"
 2. Get used to writting code in vscode
 
@@ -25,22 +26,23 @@ The following exercises are ran as a [nodeJs](https://nodejs.org/en/) project. T
 <details>
 <summary>Navigating the folder structure</summary>
 
-Have a look at your terminal and notice the title `react-prep`, this is your current working folder. 
+Have a look at your terminal and notice the title `react-prep`, this is your current working folder.
 
 ![react-prep](https://drive.google.com/uc?id=1ZEz2pNV66b4UfQb8lvLzmJTGrCn-UXCs)
 
 We need to navigate to `3-JSKata` folder to be able to run the exercises. You can do this by pasting in the following command into your terminal:
+
 ```
 cd 3-JSKata
 ```
 
 ![3-JSKata](https://drive.google.com/uc?id=1JmC27cwtVBh5qsg93qWZW7yKrAKu_d5O)
-*Note: try pressing `tab` after typing a few letters*
+_Note: try pressing `tab` after typing a few letters_
 
 > You can navigate your entire computer using the terminal! Checkout out some more termnial commands [here](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/) if you're interested.
 
 <br/>
-</details> 
+</details>
 
 <details>
 <summary>Files and folders</summary>
@@ -62,14 +64,24 @@ In your termial run "npm install". After a short while you should now see this f
 <h4><i>.gitignore</i></h4>
 Have a look inside the node_modules folder. Notice that this folder is HUGE (it only gets bigger as your project gets bigger)! We don't want to store all that code in our GitHub repository, and thats where this file comes in. When we push our commits, this file tells git which files NOT to send to the remote.
 
-
 <br/>
 </details>
 
 <br/>
 
+## 3. One last thing
+
+You may find yourself stuck on certain exercises, this is normal! One of the key ways developers debug their code is using console logging.
+
+```js
+const answer = 123;
+console.log(answer);
+```
+
+I things aren't working as you are expecting, console log out the variables and different parts of your code. This will help you get a clearer idea of what your code is doing and where its going wrong.
 
 ## Exercises
+
 - [ ] [Object and arrays](./1-objects-and-arrays/README.md) (2hrs)
 - [ ] [Strings and numbers](./2-strings-and-numbers/README.md) (2hrs)
 - [ ] [Data structures](./3-data-structures/README.md) (2hrs)
