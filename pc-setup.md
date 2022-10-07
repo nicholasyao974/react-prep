@@ -16,7 +16,7 @@ There is also a video walkthrough of the setup [here](https://youtu.be/vMOvoB20f
      need to upgrade to Windows 11 if you don't want to).
 
 - Press the Windows key and type `winver` and press Enter
-- Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
+- Confirm that your Windows is version 2004 and higher (Build 17041 and higher) or any Windows 11 version
 
   1.2. Go to the Start Menu and open Windows Powershell as an Administrator
 
@@ -186,7 +186,7 @@ If it logs "node not found", that's perfect. We want NVM to manage node and npm 
 4.3. Enter this command into your terminal to download and install nvm:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.1/install.sh | bash
 ```
 
 This command will initialise NVM when you open a terminal
@@ -245,9 +245,11 @@ nvm current
 
 ```
 [wsl2]
-memory=2GB # Limits VM memory in WSL2 to 2 GB
+memory=6GB # Limits VM memory in WSL2 to 6 GB
 processors=2 # Makes the WSL2 VM use two virtual processors
 ```
+
+> Feel free to add more if your PC has the specs for it
 
 6.2. Restart your PC
 

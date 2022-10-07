@@ -54,57 +54,9 @@ Running this command will show a system prompt, asking you to confirm in order t
 xcode-select --install
 ```
 
-## 3. Setup Visual Studio Code
+## 3. Preparing to use Node
 
-Install Visual Studio Code if it isn't already installed
-
-https://code.visualstudio.com/download
-
-In your terminal, open VS Code with:
-
-```
-code .
-```
-
-If you see a 'command not found: code' error, try opening VS code by clicking on the Visual Studio Code program in your Applications folder and then open the command pallette (command + shift + p) and run `Shell Command: install 'code' command in PATH`.
-
-### 3.1 Installing extensions
-
-Install the following VS Code extensions
-
-- ESLint
-- Prettier
-- Live Share
-- vscode-icons (optional, but pretty :wink:)
-- GitLens (optional)
-
-In your terminal, run:
-
-```shell
-code --list-extensions
-```
-
-You should see the IDs of each of these extensions logged like this:
-
-```
-dbaeumer.vscode-eslint
-esbenp.prettier-vscode
-ms-vsliveshare.vsliveshare
-vscode-icons-team.vscode-icons
-eamodio.gitlens
-```
-
-### 3.3 Make VS Code your default Git editor
-
-Run this command in your terminal:
-
-```sh
-git config --global core.editor "code --wait"
-```
-
-## 4. Preparing to use Node
-
-### 4.1 Install NVM
+### 3.1 Install NVM
 
 NVM is a tool to install and manage NodeJS versions.
 
@@ -149,7 +101,7 @@ Now run this command to reload your `~/.zshrc`
 omz reload
 ```
 
-### 4.2 Installing Node and NPM with NVM
+### 3.2 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node
 

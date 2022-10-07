@@ -2,16 +2,16 @@
 
 ## Get the tools (1hr)
 
-1. Computer set up
+1. [Download VS code](https://code.visualstudio.com/)
+
+2. Computer set up
 
    - **Mac users** [set up](/mac-setup.md)
    - **PC users** [set up](/pc-setup.md)
 
-2. [Download VS code](https://code.visualstudio.com/)
+<!-- 3. [Set Zsh as your default terminal for vsCode](https://www.shanebart.com/set-default-vscode-terminal/) -->
 
-3. [Set Zsh as your default terminal for vsCode](https://www.shanebart.com/set-default-vscode-terminal/)
-
-4. Get some extensions for VS code
+3. Get some extensions for VS code
 
    - Open extensions menu (button looks the one below)
 
@@ -28,7 +28,7 @@
 
      <br/>
 
-5. Visual Studio Code settings
+4. Visual Studio Code settings
 
    In VS Code:
 
@@ -92,19 +92,7 @@ The instructions below serve as a primer into the use of github. But as they say
 - [Create an account](https://github.com/)
 - Choose a username (preferbly something that won't make you cringe 10 years down the track lol)
 - Add a photo
-- Log into github in vscode
-  - In vs code press the following keys to open the terminal
-    ```
-    ctrl + shift + ~
-    ```
-  - Type in the following to set email
-    ```
-    git config --global user.email "your_email@example.com"
-    ```
-  - Type in the following to set name
-    ```
-    git config --global user.name "Your name here"
-    ```
+
     </details>
     <br/>
 
@@ -119,21 +107,113 @@ The instructions below serve as a primer into the use of github. But as they say
 
   ![url](https://lh5.googleusercontent.com/cuET3Dlya-I5TRM0wOdDgiZMbC6gfd4GE_cmWcNZozqM1qrH_yEUbjdwhdg2eFns0gc=w2400)
 
-- Open vscode goto `Explorer` and click `Clone Repository`
+    <details>
+    <Summary>Mac</Summary>
 
-  ![open](https://lh6.googleusercontent.com/iHqvvsyyqqvaGsFHYCslhNZWh09oYlFvvh4bO-ZtI9IkfL1GD4o_n1Vi5lLRKyGC-Mo=w2400)
+  - Open vscode goto `Explorer` and click `Clone Repository`
 
-- Paste in the URL and press `enter`
+    ![open](https://lh6.googleusercontent.com/iHqvvsyyqqvaGsFHYCslhNZWh09oYlFvvh4bO-ZtI9IkfL1GD4o_n1Vi5lLRKyGC-Mo=w2400)
 
-  ![paste](https://lh6.googleusercontent.com/_PGp8cMowJcqM1sQxhipML6IywDUuoVRQE5VaZhrfU0Ds5SyEOhK2XXuKk3WW0ofp-M=w2400)
+  - Paste in the URL and press `enter`
 
-  </details>
-  <br/>
+    ![paste](https://lh6.googleusercontent.com/_PGp8cMowJcqM1sQxhipML6IywDUuoVRQE5VaZhrfU0Ds5SyEOhK2XXuKk3WW0ofp-M=w2400)
+    </details>
+
+      <details>    
+      <summary>PC</summary>
+
+    We're going to clone a repo into your ubuntu. Do the following in your `termnial` app
+
+    1. We'll start by creating a directory to keep all your repos in
+
+    ```sh
+    mkdir ~/workspaces
+    ```
+
+    2. and then change directory into it:
+
+    ```sh
+    cd ~/workspaces
+    ```
+
+    From your Ubuntu terminal, clone down `react-prep`
+
+    ```sh
+    git clone https://github.com/yourGitHubName/react-prep.git
+    ```
+
+    > The URL should be the same as the one you got earlier.
+
+    8. Now we're going change directory into the new directory:
+
+    ```sh
+    cd react-prep
+    ```
+
+    and open Visual Studio Code
+
+    ```
+    code .
+    ```
+
+    9. Now you should be looking at the react-test in your editor. Click on the `README.md` file to read instructions from VS Code.
+
+    > Running `code .` from the ubuntu terminal is the way we will open Visual
+    > Studio Code. This ensures it opens in the Ubuntu context
+
+    Run this command in your Ubuntu terminal:
+
+    ```sh
+    Explorer.exe .
+    ```
+
+    Windows explorer will open that directory.
+
+    This is a quick and easy way to access your Linux files from windows if you ever need to.
+
+      </details>
+
+  - Log into github in vscode
+
+    In vs code press the following keys to open the terminal
+
+    ```
+    ctrl + shift + ~
+    ```
+
+    For these next two commands, replace the name and email with your own details
+
+    You'll need to configure git to know your name...
+
+    ```sh
+    git config --global user.name "Firstname Lastname"
+    ```
+
+    ... and your email address. These will be recorded as the author in commits you make
+
+    ```sh
+    git config --global user.email "your.name@example.com"
+    ```
+
+    If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
+
+    ```sh
+    git config --global credential.helper store
+    ```
+
+    Run this command to make visual studio code your default editor for git commit messages
+
+    ```sh
+    git config --global core.editor "code --wait"
+    ```
+
+      </details>
+      <br/>
 
 <details>
 <summary>4. Make your first commit</summary>
 
-- Create a new branch
+- Create a new branch by clicking on the current branch name, click `+ Create new branch...` and entering the name of your new branch
 
   ![branch](https://lh6.googleusercontent.com/F6G1Mvz6nvj5DyqTO_kGNOSWFfAVXMmp-xItdCEFYxaEiR84X6TYg2zk1xsLuhbg-aU=w2400)
 
