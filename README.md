@@ -18,8 +18,8 @@ It is almost certain that you will **not** be able to complete each section in t
 
 ## Contents
 
-- [X] 1. [Inital Set Up](/1-SetUp/README.md) (3hrs)
-- [X] 2. [Basics](/2-Basics/README.md) (4hrs 30min)
-- [ ] 3. [Java Script Kata's](/3-JSKata/README.md) (8hrs)
+- [x] 1. [Inital Set Up](/1-SetUp/README.md) (3hrs)
+- [x] 2. [Basics](/2-Basics/README.md) (4hrs 30min)
+- [x] 3. [Java Script Kata's](/3-JSKata/README.md) (8hrs)
 - [ ] 4. [Basic React](/4-React/README.md) (4hrs)
 - [ ] 5. [Build your first react app](/5-MyFirstApp/README.md) (4hrs +)
